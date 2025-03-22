@@ -24,7 +24,6 @@ This portfolio is designed to provide an engaging and seamless experience for vi
 | **HTML5**       | Structure & Layout  |
 | **CSS3**        | Styling & Animations |
 | **JavaScript**  | Interactivity       |
-| **Bootstrap**   | Responsive Design   |
 
 ---
 
