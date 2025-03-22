@@ -1,151 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Karthick - Frontend Developer Portfolio. Showcasing skills in web development, networking, and debugging.">
+    <meta name="keywords" content="web developer, frontend, portfolio, Karthick, HTML, CSS, JavaScript">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
 
-        <!-- Font Awesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-        <!-- Main CSS -->
-        <link rel="stylesheet" href="styles.css">
-        <title> Responsive Personal Portfolio Website Design </title>
-    </head>
-    <body>
-        <!-- Header Design -->
-        <header class="header">
-            <a href="#" class="logo">Portfolio</a>
-
-            <i class="fa-solid fa-bars" id="menu-icon"></i>
-
-            <nav class="navbar">
-                <a href="#home" class="active">H</a>
-                <a href="#about">Ab</a>
-                <a href="#skills">Sk</a>
-                <a href="#Achievements">A</a>
-                <a href="#contact">C</a>
-            </nav>
-        </header>
-
-        <!-- Home Section Design -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Personal Portfolio</title>
+</head>
+<body>
+    <!-- Header Design -->
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        
+        <button class="menu-toggle" id="menu-icon" aria-label="Toggle navigation menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Home Section -->
         <section class="home" id="home">
             <div class="home-content">
-                <h3>Hi</h3>
-                <h1>K</h1>
-                <h3>And I'm a <span class="multiple-text"></span></h3>
-                <p>Frontend devs blend creativity with code, Crafting interfaces where user experiences unfold.</p>
+                <h3>Hello, Myself</h3>
+                <h1>Karthick</h1>
+                <h3>A <span class="multiple-text">Web Developer</span></h3>
+                <p>Crafting dynamic, seamless web experiences with innovation and expertise.</p>
+                
                 <div class="social-media">
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/karthi_._07?igsh=MjNrN3NjanpjZHNt"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="https://www.linkedin.com/in/karthick-s-57aa36253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" aria-label="Facebook Profile"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/karthi_._07" aria-label="Instagram Profile"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter Profile"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/karthick-s-57aa36253" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
-                <a href="images/2212090_Resume.pdf" class="btn">D CV</a>
+        
+                <a href="images/KARTHICK S_RESUME.pdf" class="btn" download>Download CV</a>
             </div>
-
+        
             <div class="home-img">
-                <img src="images/karthik.jpg" alt="">
+                <img src="images/karthick1.jpg" alt="Karthick - Professional Headshot" loading="eager">
             </div>
         </section>
 
         <!-- About Section Design -->
-        <section class="about" id="about">
-            <div class="about-img">
-                <img src="images/karthi.jpg" alt="">
-            </div>
-
-            <div class="about-content">
-                <h2 class="heading">About <span>Me</span></h2>
-                <h3>Frontend Developer</h3>
-                <p>As a frontend developer, I'm the architects of user experiences, the craftsmen of interactivity, and the guardians of aesthetic appeal. My canvas is the web browser, My palette the languages of HTML, CSS, and JavaScript. But beyond the mere tools of my trade, I truely essence lies in my ability to breathe life into pixels, transforming lines of code into seamless, intuitive interfaces that captivate and engage users.</p>
-                <a href="#" class="btn">Read more</a>
+        <section class="about-section" id="about">
+            <div class="container">
+                <h2 class="section-title">About <span class="highlight">Me</span></h2>
+                
+                <div class="about-grid">
+                    <div class="about-image">
+                        <div class="image-wrapper">
+                            <img src="images/karthick.jpg" alt="Karthick - Professional Portrait" loading="lazy" width="500" height="600">
+                            <div class="experience-badge">
+                                <span class="text">Fresher</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="about-content">
+                        <div class="about-bio">
+                            <div class="about-subtitle">Software Developer</div>
+                            <p class="about-description">
+                                As a Full Stack Developer, I build dynamic and user-centric web applications with a seamless blend of frontend and backend technologies. From crafting responsive interfaces with React to designing scalable backend architectures with Node.js and MongoDB, I ensure performance, security, and efficiency in every project.
+                            </p>
+                            <p class="about-description">
+                                Passionate about blockchain technology, I specialize in developing secure and efficient smart contracts using Solidity, ensuring transparency and trust in decentralized applications. With a deep understanding of both web and blockchain ecosystems, I create innovative digital solutions that redefine user experiences.
+                            </p>
+                        </div>
+                            <div class="about-skills">
+                                <h3 class="skills-title">Technical Skills</h3>
+                                <div class="skill-tags">
+                                    <span class="skill-badge">HTML</span>
+                                    <span class="skill-badge">CSS</span>
+                                    <span class="skill-badge">JavaScript</span>
+                                    <span class="skill-badge">Java</span>
+                                    <span class="skill-badge">C++</span>
+                                    <span class="skill-badge">SQL</span>
+                                    <span class="skill-badge">React JS</span>
+                                    <span class="skill-badge">Node JS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- Services section design -->
-       <section class="skills" id="skills">
-            <h2 class="heading">My <span> Skills </span></h2>
-
+        <!-- Skills section design -->
+        <section class="skills" id="skills">
+            <h2 class="heading">My <span>Expertise</span></h2>
+        
             <div class="skills-container">
                 <div class="skills-box">
                     <i class="fa-solid fa-code"></i>
-                    <h3>Web Development</h3>
-                    <p>Web development is more than just lines of code; it's the art of crafting digital experiences that shape our online interactions. As we navigate through the vast ecosystem of the internet, it's the work of web developers that determines how seamlessly we can access information, connect with others, and engage with the digital world.</p>
-                    <a href="#" class="btn">Read More</a>
+                    <h3>Blockchain</h3>
+                    <p>I've designed and deployed secure, decentralized applications (DApps) using Ethereum, Solidity, and Web3.js. My expertise includes building smart contracts, developing blockchain-based solutions for real-world applications, and ensuring seamless integration with front-end and back-end systems. Committed to delivering transparent, scalable, and efficient solutions, I specialize in leveraging blockchain technology to drive innovation and enhance user trust.</p>
+                    <div class="tech-stack">
+                        <span>Solidity</span>
+                        <span>Ethereum</span>
+                        <span>Smart contracts</span>
+                        <span>Web3.js</span>
+                        <span>MetaMask</span>
+                        <span>Sepolia</span>
+                    </div>
+                    <a href="https://github.com/Karthi3754" class="btn">View Projects</a>
                 </div>
-
+        
                 <div class="skills-box">
                     <i class="fa-solid fa-globe"></i>
-                    <h3>Networking</h3>
-                    <p>Networking is particularly valuable for professionals seeking career advancement or transitioning to new roles or industries. Through networking, individuals can tap into the hidden job market, where many job opportunities are filled through referrals and personal connections rather than traditional job postings. By cultivating a strong network of contacts, individuals can increase their visibility, expand their professional circle, and uncover potential career opportunities that may not be advertised publicly.</p>
-                    <a href="#" class="btn">Read More</a>
+                    <h3>Web Development</h3>
+                    <p>I've designed and built responsive, user-friendly websites and applications using modern frameworks like React, and Angular. My expertise spans front-end and back-end development, utilizing technologies such as Node.js, Express, and MongoDB to create seamless, scalable solutions. I specialize in crafting accessible interfaces, optimizing performance, and ensuring cross-browser compatibility. I leverage the latest web standards to provide exceptional user experiences and drive digital innovation.</p>
+                    <div class="tech-stack">
+                        <span>React JS</span>
+                        <span>Angular JS</span>
+                        <span>Node JS</span>
+                        <span>Express JS</span>
+                        <span>MongoDB</span>
+                    </div>
+                    <a href="https://github.com/Karthi3754" class="btn">View Projects</a>
                 </div>
-
+        
                 <div class="skills-box">
                     <i class="fa-solid fa-bug"></i>
-                    <h3>Debugging</h3>
-                    <p>Debugging is the process of identifying, isolating, and resolving errors or bugs in software code. It is an essential skill for developers, as bugs are inevitable in the complex process of writing and maintaining software. Debugging involves systematic troubleshooting techniques to locate the root cause of issues and implement effective solutions.</p>
-                    <a href="#" class="btn">Read More</a>
+                    <h3>Problem Solving</h3>
+                    <p>I specialize at breaking down complex challenges and developing efficient, scalable solutions. My strong analytical skills and logical thinking enable me to tackle algorithmic and data structure problems using languages like Java, C++, and C. I have a proven track record in competitive programming and technical assessments, applying optimized approaches to solve real-world scenarios. Passionate about continuous learning, I stay updated with the latest problem-solving techniques, fostering innovation and delivering impactful results.</p>
+                    <div class="tech-stack">
+                        <span>Java</span>
+                        <span>C++</span>
+                        <span>C</span>
+                        <span>DS</span>
+                        <span>OOPS</span>
+                    </div>
+                    <a href="https://leetcode.com/u/karthi_27/" class="btn">See Success Stories</a>
                 </div>
             </div>
         </section>
 
-        <!-- Portfolio Section Design -->
-        <section class="Achievements" id="Achievements">
-            <h2 class="heading">My <span>Achievements</span> </h2>
+        <!-- Projects Section Design -->
+        <section class="projects" id="projects">
+            <h2 class="heading">Featured <span>Projects</span></h2>
+            
+            <div class="projects-container">
+                <article class="project-box">
+                    <img src="images/p1.jpg" alt="Homely Hub Project Screenshot" loading="lazy">
+                    <div class="project-info">
+                        <h3>Homely Hub</h3>
+                        <p>This project features seamless front-end and back-end integration, providing real-time data management and responsive UI design. With secure API handling, efficient database management, and optimized performance.</p>
+                        <div class="project-tech">
+                            <span>React JS</span>
+                            <span>Node JS</span>
+                            <span>Express JS</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://youtu.be/TElx1_NuTNo?si=lYL6X-M0stOf6T4B" aria-label="View Demo"><i class="fa-solid fa-play"></i> Demo</a>
+                            <a href="https://github.com/Karthi3754/Homely-Hub" aria-label="View Code"><i class="fa-brands fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </article>
 
-            <div class="Achievements-container">
-                <div class="Achievements-box">
-                    <img src="images/p1.jpg" alt="">
-                    <div class="Achievements-layer">
-                        <h4> Homely Hub </h4>
-                        <p>These projects might involve the development of smart home systems, IoT (Internet of Things) devices, or home automation platforms designed to simplify daily tasks and improve the overall living experience.</p>
-                        <a href="https://youtu.be/TElx1_NuTNo?si=lYL6X-M0stOf6T4B"><i class="fa-solid fa-up-right-from-square"></i></a>
+                <article class="project-box">
+                    <img src="./images/travel.jpg" alt="Travel-Story Project Screenshot" loading="lazy">
+                    <div class="project-info">
+                        <h3>Travel-Story</h3>
+                        <p>Travel-Story is a full-stack web application built using the MERN stack, allowing users to share and explore travel experiences through stories and photos. It features secure authentication with JWT and uses MongoDB for data storage.</p>
+                        <div class="project-tech">
+                            <span>React JS</span>
+                            <span>Node JS</span>
+                            <span>Express JS</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" aria-label="View Demo"><i class="fa-solid fa-play"></i> Demo</a>
+                            <a href="https://github.com/Karthi3754/Travel-Story" aria-label="View Code"><i class="fa-brands fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-box">
+                    <img src="images/file.jpg" alt="Decentralized Project Screenshot" loading="lazy">
+                    <div class="project-info">
+                        <h3>Decentralized File Sharing System</h3>
+                        <p>Built using Ethereum and IPFS (InterPlanetary File System), it ensures data integrity, immutability, and decentralized storage. The system uses smart contracts for access management, providing a trustless and efficient solution for peer-to-peer file transfers.</p>
+                        <div class="project-tech">
+                            <span>Solidity</span>
+                            <span>Smart contract</span>
+                            <span>Web3.JS</span>
+                            <span>IPFS</span>
+                            <span>MetaMask</span>
+                            <span>Sepolia</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" aria-label="View Demo"><i class="fa-solid fa-play"></i> Demo</a>
+                            <a href="#" aria-label="View Code"><i class="fa-brands fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Add more project boxes as needed -->
+                <article class="project-box">
+                    <img src="images/medicine.jpg" alt="Medicine Project Screenshot" loading="lazy">
+                    <div class="project-info">
+                        <h3>Medicine management System</h3>
+                        <p>It is a comprehensive application designed to streamline the management of medicines in pharmacies and healthcare facilities. Built using Java Swing and MySQL, it offers features for inventory tracking, expiry date management, and automated stock alerts.</p>
+                        <div class="project-tech">
+                            <span>Java</span>
+                            <span>SQL</span>
+                            <span>JavaSwing</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" aria-label="View Demo"><i class="fa-solid fa-play"></i> Demo</a>
+                            <a href="#" aria-label="View Code"><i class="fa-brands fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-box">
+                    <img src="images/map1.jpg" alt="Map Integration Project Screenshot" loading="lazy">
+                    <div class="project-info">
+                        <h3>Smart Delivery with Real-time Location Integration</h3>
+                        <p>Smart Delivery with Real-time Location Integration is an innovative logistics management system that ensures efficient and transparent deliveries. Using GPS tracking and real-time location updates, it provides customers and delivery agents with accurate tracking information. It minimizes delivery delays and improves customer satisfaction.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>IoT</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://youtu.be/TElx1_NuTNo?si=lYL6X-M0stOf6T4B" aria-label="View Demo"><i class="fa-solid fa-play"></i> Demo</a>
+                            <a href="#" aria-label="View Code"><i class="fa-brands fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Achievements Section Design -->
+        <section class="achievements" id="achievements">
+            <h2 class="heading">My <span>Achievements</span></h2>
+
+            <div class="achievements-container">
+                <div class="achievements-box">
+                    <img src="./images/downloadweb.png" alt="Homely Hub Project" loading="lazy">
+                    <div class="achievements-layer">
+                        <h4>Homely Hub Internship</h4>
+                        <p>The project features seamless front-end and back-end integration, providing real-time data management and responsive UI design. With secure API handling, efficient database management, and optimized performance.</p>
+                        <a href="./images/homelyhub.jpg" aria-label="View Demo"><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
 
-                <div class="Achievements-box">
-                    <img src="images/c++.jpg" alt="">
-                    <div class="Achievements-layer">
-                        <h4> Internship on C++ </h4>
-                        <p>An internship focused on C++ programming offers a valuable opportunity for students or early-career professionals to gain practical experience and enhance their skills in one of the most widely used programming languages in the world.</p>
-                        <a href="images/Karthick S-2.pdf"><i class="fa-solid fa-up-right-from-square"></i></a>
+                <div class="achievements-box">
+                    <img src="./images/techno.jpg" alt="C++ Internship Certificate" loading="lazy">
+                    <div class="achievements-layer">
+                        <h4>Internship on C++</h4>
+                        <p>An internship focused on C++ programming offers a valuable opportunity for students to gain practical experience and enhance their skills in one of the most widely used programming languages in the world.</p>
+                        <a href="images/Karthick S-2.pdf" aria-label="View Certificate"><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
 
-                <div class="Achievements-box">
-                    <img src="images/images.jpg" alt="">
-                    <div class="Achievements-layer">
-                        <h4> IOT </h4>
-                        <p>IOT refers to the network of interconnected devices embedded with sensors, software, and other technologies that enable them to collect and exchange data over the internet. These devices can range from everyday objects like smartphones, wearable devices, and home appliances to industrial machinery, vehicles, and infrastructure components.</p>
-                        <a href="images/iot.jpg"><i class="fa-solid fa-up-right-from-square"></i></a>
+                <div class="achievements-box">
+                    <img src="./images/codsoft-img.jpg" alt="CodSoft Internship" loading="lazy">
+                    <div class="achievements-layer">
+                        <h4>CodSoft Internship</h4>
+                        <p>I enhanced my understanding of front-end and back-end technologies, applying modern frameworks and tools to develop functional and user-friendly websites.</p>
+                        <a href="./images/codsoft.jpg" aria-label="View Certificate"><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
 
-                <div class="Achievements-box">
-                    <img src="images/images (1).jpg" alt="">
-                    <div class="Achievements-layer">
-                        <h4> Skillrack </h4>
-                        <p> 2000+ Problems Solved </p>
-                        <a href="images/skillrack.pdf"><i class="fa-solid fa-up-right-from-square"></i></a>
+                <div class="achievements-box">
+                    <img src="./images/skillrack.png" alt="Skillrack Achievement" loading="lazy">
+                    <div class="achievements-layer">
+                        <h4>Skillrack</h4>
+                        <p>2000+ Problems Solved</p>
+                        <a href="images/skillrack.pdf" aria-label="View Certificate"><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
 
-                <div class="Achievements-box">
-                    <img src="images/nptel.jpg" alt="">
-                    <div class="Achievements-layer">
-                        <h4> NPTEL </h4>
-                        <p> 5 Courses Completed </p>
-                        <a href="images/Privacy and Security in Online Social Media.pdf"><i class="fa-solid fa-up-right-from-square"></i></a>
+                <div class="achievements-box">
+                    <img src="./images/np.jpg" alt="NPTEL Courses" loading="lazy">
+                    <div class="achievements-layer">
+                        <h4>NPTEL</h4>
+                        <p>5 Courses Completed</p>
+                        <a href="images/Privacy and Security in Online Social Media.pdf" aria-label="View Certificate"><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
 
-                <div class="Achievements-box">
-                    <img src="images/download (2).png" alt="">
-                    <div class="Achievements-layer">
-                        <h4> Sololearn </h4>
-                        <p> 5 courses Completed </p>
-                        <a href="https://www.sololearn.com/profile/29346863/?ref=app"><i class="fa-solid fa-up-right-from-square"></i></a>
+                <div class="achievements-box">
+                    <img src="./images/solo.png" alt="Sololearn Courses" loading="lazy">
+                    <div class="achievements-layer">
+                        <h4>Sololearn</h4>
+                        <p>5 Courses Completed</p>
+                        <a href="https://www.sololearn.com/profile/29346863/?ref=app" aria-label="View Profile"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="achievements-box">
+                    <img src="./images/coursera.png" alt="Google Courses" loading="lazy">
+                    <div class="achievements-layer">
+                        <h4>Foundation of Cybersecurity</h4>
+                        <p>Gained essential knowledge of cybersecurity principles, risk management, and secure practices to protect digital systems.</p>
+                        <a href="./images/Google.jpg" aria-label="View Profile"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="achievements-box">
+                    <img src="./images/prompt1.jpg" alt="Sololearn Courses" loading="lazy">
+                    <div class="achievements-layer">
+                        <h4>Prompt Engineering</h4>
+                        <p>Developed expertise in effective prompts to optimize AI model responses, enhancing problem-solving and AI interaction skills.</p>
+                        <a href="./images/prompt2.jpg" aria-label="View Profile"><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
@@ -153,42 +335,95 @@
 
         <!-- Contact Section Design -->
         <section class="contact" id="contact">
-            <h2 class="heading">Contact<span>Me</span></h2>
-
-            <form action="#">
-                <div class="input-box">
-                    <input type="text" placeholder="Full Name">
-                    <input type="email" placeholder="Email Address">
+            <h2 class="heading">Contact <span>Me</span></h2>
+        
+            <div class="contact-container">
+                <!-- Contact info section -->
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="bx bx-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p><a href="mailto:example@email.com">karthis3754@gmail.com</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="bx bx-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p><a href="tel:+1234567890">9688123545</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="bx bx-map"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Kovilpatti, TamilNadu, India</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Social media links -->
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/karthick-s-57aa36253" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+                        <a href="https://github.com/Karthi3754" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="bx bxl-twitter"></i></a>
+                    </div>
                 </div>
-
-                <div class="input-box">
-                    <input type="number" placeholder="Mobile Number">
-                    <input type="text" placeholder="Email Subject">
-                </div>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-                <input type="submit" value="Send Message" class="btn">
-            </form>
+        
+                <!-- Contact form -->
+                <form id="contact-form" method="post" action="send-email.php">
+                    <div class="input-box">
+                        <input type="text" name="name" id="name" placeholder="Full Name" required>
+                        <input type="email" name="email" id="email" placeholder="Email Address" required>
+                    </div>
+        
+                    <div class="input-box">
+                        <input type="tel" name="phone" id="phone" placeholder="Mobile Number" pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number">
+                        <input type="text" name="subject" id="subject" placeholder="Email Subject" required>
+                    </div>
+                    
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                    
+                    <div class="form-footer">
+                        <button type="submit" class="btn">
+                            <i class="bx bx-send"></i> Send Message
+                        </button>
+                        <p class="response-time">I'll get back to you within 24 hours</p>
+                    </div>
+                </form>
+            </div>
         </section>
+        </main>
 
-        <!-- Footer Design -->
-        <footer class="footer">
+    <!-- Footer Design -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-social">
+                <a href="#" aria-label="Facebook Profile"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/karthi_._07" aria-label="Instagram Profile"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter Profile"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/karthick-s-57aa36253" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            
             <div class="footer-text">
-                <p></p>
+                <p>&copy; 2025 Karthick. All rights reserved.</p>
             </div>
+        </div>
 
-            <div class="footer-iconTop">
-                <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
-            </div>
-        </footer>
+        <div class="footer-iconTop">
+            <a href="#home" aria-label="Back to top"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
+    </footer>
 
-        <!--- scroll reveal -->
-        <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-        <!---typed js -->
-        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Typed js -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
-        <!-- Main JS-->
-        <script src="main.js"></script>
-
-    </body>
+    <!-- Main JS-->
+    <script src="main.js"></script>
+</body>
 </html>
